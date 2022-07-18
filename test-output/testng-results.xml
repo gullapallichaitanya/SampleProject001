@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-15T18:19:53 IST" name="Default suite" finished-at="2022-07-15T18:20:03 IST" duration-ms="9672">
+    <groups>
+    </groups>
+    <test started-at="2022-07-15T18:19:53 IST" name="Default test" finished-at="2022-07-15T18:20:03 IST" duration-ms="9672">
+      <class name="com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle">
+        <test-method is-config="true" signature="initiateObjects()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle@757acd7b]" started-at="2022-07-15T18:19:53 IST" name="initiateObjects" finished-at="2022-07-15T18:19:53 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateObjects -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle@757acd7b]" started-at="2022-07-15T18:19:53 IST" name="setup" finished-at="2022-07-15T18:20:01 IST" duration-ms="8056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_model_dropdown_options()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle@757acd7b]" started-at="2022-07-15T18:20:01 IST" name="verify_model_dropdown_options" finished-at="2022-07-15T18:20:03 IST" duration-ms="1564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_model_dropdown_options -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle@757acd7b]" started-at="2022-07-15T18:20:03 IST" name="teardown" finished-at="2022-07-15T18:20:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

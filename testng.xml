@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.demo.utils.ListenersUtil" />
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="com.demo.insuranceCalculation_Motorcycle.EndToEndTests_Motorcycle" />
+			<class name="com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
