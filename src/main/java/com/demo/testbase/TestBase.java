@@ -28,7 +28,8 @@ public class TestBase extends ObjectsRepo {
 	 */
 	
 	public void launchBrowserAndNavigate() throws Exception {
-		String browser = propOps.getPropertyValueByKey("browser");
+		//String browser = propOps.getPropertyValueByKey("browser");
+		String browser = System.getProperty("Browser");
 		String url = propOps.getPropertyValueByKey("url");
 		//String url - System.getProperty("appUrl");
 		

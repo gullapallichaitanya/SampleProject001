@@ -2,38 +2,38 @@
 <testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-19T21:47:14 IST" name="Suite" finished-at="2022-07-19T21:47:41 IST" duration-ms="26745">
+  <suite started-at="2022-07-19T22:31:10 IST" name="Suite" finished-at="2022-07-19T22:31:28 IST" duration-ms="17946">
     <groups>
     </groups>
-    <test started-at="2022-07-19T21:47:14 IST" name="Test" finished-at="2022-07-19T21:47:41 IST" duration-ms="26745">
+    <test started-at="2022-07-19T22:31:10 IST" name="Test" finished-at="2022-07-19T22:31:28 IST" duration-ms="17946">
       <class name="com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle@394a2528]" started-at="2022-07-19T21:47:29 IST" name="setup" finished-at="2022-07-19T21:47:38 IST" duration-ms="9842" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle@394a2528]" started-at="2022-07-19T22:31:21 IST" name="setup" finished-at="2022-07-19T22:31:26 IST" duration-ms="4461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_model_dropdown_options()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle@394a2528]" started-at="2022-07-19T21:47:38 IST" name="verify_model_dropdown_options" finished-at="2022-07-19T21:47:40 IST" duration-ms="1851" status="PASS">
+        <test-method signature="verify_model_dropdown_options()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle@394a2528]" started-at="2022-07-19T22:31:26 IST" name="verify_model_dropdown_options" finished-at="2022-07-19T22:31:28 IST" duration-ms="1697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_model_dropdown_options -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle@394a2528]" started-at="2022-07-19T21:47:40 IST" name="teardown" finished-at="2022-07-19T21:47:41 IST" duration-ms="326" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle@394a2528]" started-at="2022-07-19T22:31:28 IST" name="teardown" finished-at="2022-07-19T22:31:28 IST" duration-ms="282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.demo.insuranceCalculation_Motorcycle.ErrorTests_Motorcycle -->
       <class name="com.demo.insuranceCalculation_Motorcycle.EndToEndTests_Motorcycle">
-        <test-method is-config="true" signature="initiateObjects()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.EndToEndTests_Motorcycle@6a03bcb1]" started-at="2022-07-19T21:47:14 IST" name="initiateObjects" finished-at="2022-07-19T21:47:14 IST" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="initiateObjects()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.EndToEndTests_Motorcycle@6a03bcb1]" started-at="2022-07-19T22:31:10 IST" name="initiateObjects" finished-at="2022-07-19T22:31:10 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateObjects -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.EndToEndTests_Motorcycle@6a03bcb1]" started-at="2022-07-19T21:47:14 IST" name="setup" finished-at="2022-07-19T21:47:24 IST" duration-ms="9508" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.EndToEndTests_Motorcycle@6a03bcb1]" started-at="2022-07-19T22:31:10 IST" name="setup" finished-at="2022-07-19T22:31:17 IST" duration-ms="6718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="insuranceCalculate()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.EndToEndTests_Motorcycle@6a03bcb1]" started-at="2022-07-19T21:47:24 IST" name="insuranceCalculate" finished-at="2022-07-19T21:47:28 IST" duration-ms="4502" status="PASS">
+        <test-method signature="insuranceCalculate()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.EndToEndTests_Motorcycle@6a03bcb1]" started-at="2022-07-19T22:31:17 IST" name="insuranceCalculate" finished-at="2022-07-19T22:31:21 IST" duration-ms="4170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- insuranceCalculate -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.EndToEndTests_Motorcycle@6a03bcb1]" started-at="2022-07-19T21:47:28 IST" name="teardown" finished-at="2022-07-19T21:47:29 IST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.demo.insuranceCalculation_Motorcycle.EndToEndTests_Motorcycle@6a03bcb1]" started-at="2022-07-19T22:31:21 IST" name="teardown" finished-at="2022-07-19T22:31:21 IST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
