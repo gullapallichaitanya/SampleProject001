@@ -6,6 +6,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<selenium.java.version>4.3.0</selenium.java.version>
+		<selenium.server.version>3.141.59</selenium.server.version>
 		<selenium.drivermanager.version>5.2.0</selenium.drivermanager.version>
 		<aspectj.version>1.8.10</aspectj.version>
 		<allure.version>2.18.1</allure.version>
@@ -72,6 +73,11 @@
 			<artifactId>testng</artifactId>
 			<version>${testng.version}</version>
 		</dependency>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>${selenium.server.version}</version>
+</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
