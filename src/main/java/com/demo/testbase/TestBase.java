@@ -43,8 +43,8 @@ public class TestBase extends ObjectsRepo {
 		String browser = System.getProperty("Browser");
 		String url = propOps.getPropertyValueByKey("url");
 		//String url - System.getProperty("appUrl");
-		caps.setCapability("os", "Windows");
-		caps.setCapability("os_version", "10");
+		caps.setCapability("os", "OS X");
+		caps.setCapability("os_version", "Monterey");
 		options.addArguments("--incognito");
 		options.addArguments("--disable-site-isolation-trials");
 		System.out.println("Browser::::::::::::::::::::::::" + browser);
@@ -73,6 +73,11 @@ public class TestBase extends ObjectsRepo {
 			//caps.setBrowserName("edge");
 			caps.setCapability("browser", "Edge");
 			caps.setCapability("browser_version", "latest");
+			
+			
+		} else if (browser.equalsIgnoreCase("safari")) {
+			caps.setCapability("browser", "Safari");
+			caps.setCapability("browser_version", "15.0");
 			
 			
 		}
