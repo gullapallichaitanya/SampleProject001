@@ -43,31 +43,40 @@ public class TestBase extends ObjectsRepo {
 		//String browser = System.getProperty("Browser");
 		String url = propOps.getPropertyValueByKey("url");
 		//String url - System.getProperty("appUrl");
+		caps.setCapability("os", "Windows");
+		caps.setCapability("os_version", "10");
+		options.addArguments("--incognito");
+		options.addArguments("--disable-site-isolation-trials");
 		
 		if (browser.equalsIgnoreCase("chrome")) {
 			//driver = WebDriverManager.chromedriver().create();
 			//caps.setBrowserName("chrome");
-			caps.setCapability("os", "Windows");
-			caps.setCapability("os_version", "10");
-			caps.setCapability("browser", "Edge");
-			caps.setCapability("browser_version", "latest");
-			options.addArguments("--incognito");
-			options.addArguments("--disable-site-isolation-trials");
-			options.merge(caps);
+			caps.setCapability("browser", "Chrome");
+			caps.setCapability("browser_version", "latest");			
 			
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			//driver = WebDriverManager.firefoxdriver().create();
 			//caps.setBrowserName("firefox");
 			//caps.setCapability("marionette",true);
+			caps.setCapability("browser", "Firefox");
+			caps.setCapability("browser_version", "latest");
+			caps.setCapability("marionette",true);
 			
 		} else if (browser.equalsIgnoreCase("ie")) {
-			driver = WebDriverManager.iedriver().create();
+			//driver = WebDriverManager.iedriver().create();
+			caps.setCapability("browser", "ie");
+			caps.setCapability("browser_version", "latest");
 			
 		} else if (browser.equalsIgnoreCase("edge")) {
-			driver = WebDriverManager.edgedriver().create();
+			//driver = WebDriverManager.edgedriver().create();
 			//caps.setBrowserName("edge");
+			caps.setCapability("browser", "Edge");
+			caps.setCapability("browser_version", "latest");
+			
 			
 		}
+		
+		options.merge(caps);
 		driver = new RemoteWebDriver(new URL(URL), options);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
