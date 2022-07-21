@@ -39,14 +39,15 @@ public class TestBase extends ObjectsRepo {
 	public void launchBrowserAndNavigate() throws Exception {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		ChromeOptions options = new ChromeOptions();
-		String browser = propOps.getPropertyValueByKey("browser");
-		//String browser = System.getProperty("Browser");
+		//String browser = propOps.getPropertyValueByKey("browser");
+		String browser = System.getProperty("Browser");
 		String url = propOps.getPropertyValueByKey("url");
 		//String url - System.getProperty("appUrl");
 		caps.setCapability("os", "Windows");
 		caps.setCapability("os_version", "10");
 		options.addArguments("--incognito");
 		options.addArguments("--disable-site-isolation-trials");
+		System.out.println("Browser::::::::::::::::::::::::" + browser);
 		
 		if (browser.equalsIgnoreCase("chrome")) {
 			//driver = WebDriverManager.chromedriver().create();
@@ -59,7 +60,7 @@ public class TestBase extends ObjectsRepo {
 			//caps.setBrowserName("firefox");
 			//caps.setCapability("marionette",true);
 			caps.setCapability("browser", "Firefox");
-			caps.setCapability("browser_version", "latest");
+			//caps.setCapability("browser_version", "latest");
 			caps.setCapability("marionette",true);
 			
 		} else if (browser.equalsIgnoreCase("ie")) {
