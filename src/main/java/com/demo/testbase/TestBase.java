@@ -2,8 +2,10 @@ package com.demo.testbase;
 
 import java.net.URL;
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
@@ -30,35 +32,44 @@ public class TestBase extends ObjectsRepo {
 	 * protected HomePageObjects homepage = new HomePageObjects(); protected
 	 * EnterVehicleDataPageObjects vehicledata = new EnterVehicleDataPageObjects();
 	 */
+	public static final String USERNAME = "gullapallichaita_tiDwCl";
+	public static final String AUTOMATE_KEY = "dkZQEPzXRRWd7a1Yyx6a";
+	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 	
 	public void launchBrowserAndNavigate() throws Exception {
 		DesiredCapabilities caps = new DesiredCapabilities();
-		//String browser = propOps.getPropertyValueByKey("browser");
-		String browser = System.getProperty("Browser");
+		ChromeOptions options = new ChromeOptions();
+		String browser = propOps.getPropertyValueByKey("browser");
+		//String browser = System.getProperty("Browser");
 		String url = propOps.getPropertyValueByKey("url");
 		//String url - System.getProperty("appUrl");
 		
 		if (browser.equalsIgnoreCase("chrome")) {
 			//driver = WebDriverManager.chromedriver().create();
-			caps.setBrowserName("chrome");
-			//driver = new RemoteWebDriver(new URL("http://192.168.101.6:4444"), caps);
+			//caps.setBrowserName("chrome");
+			caps.setCapability("os", "Windows");
+			caps.setCapability("os_version", "10");
+			caps.setCapability("browser", "Edge");
+			caps.setCapability("browser_version", "latest");
+			options.addArguments("--incognito");
+			options.addArguments("--disable-site-isolation-trials");
+			options.merge(caps);
 			
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			//driver = WebDriverManager.firefoxdriver().create();
-			caps.setBrowserName("firefox");
-			caps.setCapability("marionette",true);
-			//driver = new RemoteWebDriver(new URL("http://192.168.101.6:4444"), caps);
+			//caps.setBrowserName("firefox");
+			//caps.setCapability("marionette",true);
 			
 		} else if (browser.equalsIgnoreCase("ie")) {
 			driver = WebDriverManager.iedriver().create();
 			
 		} else if (browser.equalsIgnoreCase("edge")) {
-			//driver = WebDriverManager.edgedriver().create();
-			caps.setBrowserName("chrome");
+			driver = WebDriverManager.edgedriver().create();
+			//caps.setBrowserName("edge");
 			
 		}
-		driver = new RemoteWebDriver(new URL("http://192.168.101.6:4444"), caps);
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver = new RemoteWebDriver(new URL(URL), options);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(url);
 	}
